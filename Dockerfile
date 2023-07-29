@@ -14,4 +14,6 @@ WORKDIR /root
 
 ADD . ./
 
+EXPOSE 9515
+
 RUN npm install

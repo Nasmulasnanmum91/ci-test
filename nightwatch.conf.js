@@ -35,7 +35,14 @@ module.exports = {
         "searchText" : "Tesla",
       },
       desiredCapabilities: {
-        browserName: 'chrome'
+        browserName: 'chrome',
+        'goog:chromeOptions': {
+          args: [
+            '--disable-dev-shm-usage',
+            '--no-sandbox',
+            '--headless',
+          ]
+        }
       },
       webdriver: {
         start_process: true,

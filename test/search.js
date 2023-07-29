@@ -1,10 +1,15 @@
 module.exports = {
+    '@tags': ['search'],
+
     before(browser){
     browser
     .page.sedtest()
     .navigate()
     .waitForElementVisible('@main','Navbar is visible')
     .assert.textContains('@main', 'Главная', 'Welcome title is correct')
+    },
+    after(browser) {
+        browser.end();
     },
     
     'Search for word': function (browser) {

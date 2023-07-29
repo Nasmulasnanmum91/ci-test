@@ -46,7 +46,7 @@ module.exports = {
       },
       webdriver: {
         start_process: true,
-        server_path: ''
+        server_path: '/root/node_modules/chromedriver/lib/chromedriver/chromedriver'
       },
     },
     firefox: {
